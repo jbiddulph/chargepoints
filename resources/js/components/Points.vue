@@ -166,7 +166,7 @@ export default {
   methods: {
     fetchPoints(page_url) {
       let vm = this
-      page_url = page_url || '/public/api/points'
+      page_url = page_url || '/api/points'
       fetch(page_url)
         .then(res => res.json())
         .then(res => {
@@ -186,7 +186,7 @@ export default {
     },
     deletePoint(id) {
       if(confirm('Are you sure?')) {
-        fetch(`/public/api/points/${id}`, {
+        fetch(`/api/points/${id}`, {
           method: 'delete'
         })
         .then(res => res.text())
@@ -200,7 +200,7 @@ export default {
     },
     addPoint() {
       if(this.edit === false) {
-        fetch('/public/api/points', {
+        fetch('/api/points', {
           method: 'post',
           body: JSON.stringify(this.point),
           headers: {
@@ -239,7 +239,7 @@ export default {
         .catch(err => console.log(err))
       } else {
         //update
-        fetch('/public/api/points', {
+        fetch('/api/points', {
           method: 'put',
           body: JSON.stringify(this.point),
           headers: {
