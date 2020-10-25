@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::apiResource('points', 'PointsController');
 // Route::put('points', 'PointsController@update');
+// Route::get('/public/api/points', 'PointsController@index');
+
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
