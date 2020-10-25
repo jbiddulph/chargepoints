@@ -4,9 +4,9 @@
       <div class="col-md-8">
         <h2>Charge Points</h2>
       </div>
-      <div class="col-md-4 text-right">
+      <div class="col-md-4 text-right mt-2">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addStopChargeModal">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addStopChargeModal">
           Add Stop Charge
         </button>
       </div>
@@ -125,7 +125,7 @@
                 <p>{{ point.Latitude }}</p>
                 <p>{{ point.Longitude }}</p>
                 <h2>Address:</h2>
-                <p>{{ point.SubBuildingName }}<br />
+                <div v-if="point.SubBuildingName">{{ point.SubBuildingName }}</div>
                 <div v-if="point.BuildingName">{{ point.BuildingName }}</div>
                 <div v-if="point.BuildingNumber">{{ point.BuildingNumber }}</div>
                 <div v-if="point.Thoroughfare">{{ point.Thoroughfare }}</div>

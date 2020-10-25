@@ -38665,7 +38665,10 @@ var render = function() {
                   _vm._v(" "),
                   _c("h2", [_vm._v("Address:")]),
                   _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(point.SubBuildingName)), _c("br")]),
+                  point.SubBuildingName
+                    ? _c("div", [_vm._v(_vm._s(point.SubBuildingName))])
+                    : _vm._e(),
+                  _vm._v(" "),
                   point.BuildingName
                     ? _c("div", [_vm._v(_vm._s(point.BuildingName))])
                     : _vm._e(),
@@ -38798,11 +38801,11 @@ var staticRenderFns = [
         _c("h2", [_vm._v("Charge Points")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-4 text-right" }, [
+      _c("div", { staticClass: "col-md-4 text-right mt-2" }, [
         _c(
           "button",
           {
-            staticClass: "btn btn-primary",
+            staticClass: "btn btn-info",
             attrs: {
               type: "button",
               "data-toggle": "modal",
