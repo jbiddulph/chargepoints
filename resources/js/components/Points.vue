@@ -97,16 +97,16 @@
               <p>{{ point.Longitude }}</p>
               <h2>Address:</h2>
               <p>{{ point.SubBuildingName }}<br />
-              {{ point.BuildingName }}<br />
-              {{ point.BuildingNumber }}<br />
-              {{ point.Thoroughfare }}<br />
-              {{ point.Street }}<br />
-              {{ point.DoubleDependantLocality }}<br />
-              {{ point.DependantLocality }}<br />
-              {{ point.PostTown }}<br />
-              {{ point.County }}<br />
-              {{ point.PostCode }}<br />
-              {{ point.Country }}</p>
+              <div v-if="point.BuildingName">{{ point.BuildingName }}</div>
+              <div v-if="point.BuildingNumber">{{ point.BuildingNumber }}</div>
+              <div v-if="point.Thoroughfare">{{ point.Thoroughfare }}</div>
+              <div v-if="point.Street">{{ point.Street }}</div>
+              <div v-if="point.DoubleDependantLocality">{{ point.DoubleDependantLocality }}</div>
+              <div v-if="point.DependantLocality">{{ point.DependantLocality }}</div>
+              <div v-if="point.PostTown">{{ point.PostTown }}</div>
+              <div v-if="point.County">{{ point.County }}</div>
+              <div v-if="point.PostCode">{{ point.PostCode }}</div>
+              <div v-if="point.Country">{{ point.Country }}</div>
               <p>{{ point.DateCreated }}</p>
               <p>{{ point.DateUpdated }}</p>
               <p>{{ point.Attribution }}</p>

@@ -38495,31 +38495,46 @@ var render = function() {
                 _vm._v(" "),
                 _c("h2", [_vm._v("Address:")]),
                 _vm._v(" "),
-                _c("p", [
-                  _vm._v(_vm._s(point.SubBuildingName)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.BuildingName)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.BuildingNumber)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.Thoroughfare)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.Street)),
-                  _c("br"),
-                  _vm._v(
-                    "\n            " + _vm._s(point.DoubleDependantLocality)
-                  ),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.DependantLocality)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.PostTown)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.County)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.PostCode)),
-                  _c("br"),
-                  _vm._v("\n            " + _vm._s(point.Country))
-                ]),
+                _c("p", [_vm._v(_vm._s(point.SubBuildingName)), _c("br")]),
+                point.BuildingName
+                  ? _c("div", [_vm._v(_vm._s(point.BuildingName))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.BuildingNumber
+                  ? _c("div", [_vm._v(_vm._s(point.BuildingNumber))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.Thoroughfare
+                  ? _c("div", [_vm._v(_vm._s(point.Thoroughfare))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.Street
+                  ? _c("div", [_vm._v(_vm._s(point.Street))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.DoubleDependantLocality
+                  ? _c("div", [_vm._v(_vm._s(point.DoubleDependantLocality))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.DependantLocality
+                  ? _c("div", [_vm._v(_vm._s(point.DependantLocality))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.PostTown
+                  ? _c("div", [_vm._v(_vm._s(point.PostTown))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.County
+                  ? _c("div", [_vm._v(_vm._s(point.County))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.PostCode
+                  ? _c("div", [_vm._v(_vm._s(point.PostCode))])
+                  : _vm._e(),
+                _vm._v(" "),
+                point.Country
+                  ? _c("div", [_vm._v(_vm._s(point.Country))])
+                  : _vm._e(),
                 _vm._v(" "),
                 _c("p", [_vm._v(_vm._s(point.DateCreated))]),
                 _vm._v(" "),
