@@ -95,6 +95,7 @@
               <p>{{ point.ChargeDeviceText }}</p>
               <p>{{ point.Latitude }}</p>
               <p>{{ point.Longitude }}</p>
+              <h2>Address:</h2>
               <p>{{ point.SubBuildingName }}<br />
               {{ point.BuildingName }}<br />
               {{ point.BuildingNumber }}<br />
