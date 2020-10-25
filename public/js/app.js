@@ -2138,7 +2138,7 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         //update
         fetch('/api/points', {
-          method: 'put',
+          method: 'patch',
           body: JSON.stringify(this.point),
           headers: {
             'content-type': 'application/json'
@@ -38524,33 +38524,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", [_vm._v(_vm._s(point.Attribution))]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.id))]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-warning mb-2",
-                    on: {
-                      click: function($event) {
-                        return _vm.editPoint(point)
-                      }
-                    }
-                  },
-                  [_vm._v("Edit")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-danger mb-2",
-                    on: {
-                      click: function($event) {
-                        return _vm.deletePoint(point.id)
-                      }
-                    }
-                  },
-                  [_vm._v("Delete")]
-                )
+                _c("p", [_vm._v(_vm._s(point.id))])
               ])
             ])
           ])
