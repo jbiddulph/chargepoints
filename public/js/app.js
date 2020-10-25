@@ -37826,7 +37826,7 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "container" }, [
           _c("a", { staticClass: "navbar-brand", attrs: { href: "" } }, [
-            _vm._v("Points")
+            _vm._v("Stop Charge")
           ])
         ])
       ]
