@@ -38524,7 +38524,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", [_vm._v(_vm._s(point.Attribution))]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.id))])
+                _c("p", [_vm._v("ID: " + _vm._s(point.id))])
               ])
             ])
           ])

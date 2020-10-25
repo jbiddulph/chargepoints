@@ -109,7 +109,7 @@
               <p>{{ point.DateCreated }}</p>
               <p>{{ point.DateUpdated }}</p>
               <p>{{ point.Attribution }}</p>
-              <p>{{ point.id }}</p>
+              <p>ID: {{ point.id }}</p>
               <!-- <button @click="editPoint(point)" class="btn btn-warning mb-2">Edit</button>
               <button @click="deletePoint(point.id)" class="btn btn-danger mb-2">Delete</button> -->
             </div>
