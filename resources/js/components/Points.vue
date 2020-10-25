@@ -240,7 +240,7 @@ export default {
       } else {
         //update
         fetch('/api/points', {
-          method: 'put',
+          method: 'patch',
           body: JSON.stringify(this.point),
           headers: {
             'content-type': 'application/json',
