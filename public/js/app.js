@@ -2038,6 +2038,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37821,803 +37851,1019 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "col-md-12" }, [
-      _c("h2", [_vm._v("Charge Points")]),
-      _vm._v(" "),
-      _c(
-        "form",
-        {
-          staticClass: "mb-4",
-          on: {
-            submit: function($event) {
-              $event.preventDefault()
-              return _vm.addPoint($event)
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c(
+          "div",
+          {
+            staticClass: "modal fade",
+            attrs: {
+              id: "addStopChargeModal",
+              tabindex: "-1",
+              role: "dialog",
+              "aria-labelledby": "addStopChargeModalTitle",
+              "aria-hidden": "true"
             }
-          }
-        },
-        [
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.ChargeDeviceId,
-                  expression: "point.ChargeDeviceId"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "ChargeDeviceId" },
-              domProps: { value: _vm.point.ChargeDeviceId },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "ChargeDeviceId", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.ChargeDeviceRef,
-                  expression: "point.ChargeDeviceRef"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "ChargeDeviceRef" },
-              domProps: { value: _vm.point.ChargeDeviceRef },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "ChargeDeviceRef", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.ChargeDeviceName,
-                  expression: "point.ChargeDeviceName"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "ChargeDeviceName" },
-              domProps: { value: _vm.point.ChargeDeviceName },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "ChargeDeviceName", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.ChargeDeviceText,
-                  expression: "point.ChargeDeviceText"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "ChargeDeviceText" },
-              domProps: { value: _vm.point.ChargeDeviceText },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "ChargeDeviceText", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.Latitude,
-                  expression: "point.Latitude"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Latitude" },
-              domProps: { value: _vm.point.Latitude },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "Latitude", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.Longitude,
-                  expression: "point.Longitude"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Longitude" },
-              domProps: { value: _vm.point.Longitude },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "Longitude", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.SubBuildingName,
-                  expression: "point.SubBuildingName"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "SubBuildingName" },
-              domProps: { value: _vm.point.SubBuildingName },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "SubBuildingName", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.BuildingName,
-                  expression: "point.BuildingName"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "BuildingName" },
-              domProps: { value: _vm.point.BuildingName },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "BuildingName", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.BuildingNumber,
-                  expression: "point.BuildingNumber"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "BuildingNumber" },
-              domProps: { value: _vm.point.BuildingNumber },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "BuildingNumber", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.Thoroughfare,
-                  expression: "point.Thoroughfare"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Thoroughfare" },
-              domProps: { value: _vm.point.Thoroughfare },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "Thoroughfare", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.Street,
-                  expression: "point.Street"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Street" },
-              domProps: { value: _vm.point.Street },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "Street", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.DoubleDependantLocality,
-                  expression: "point.DoubleDependantLocality"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "DoubleDependantLocality" },
-              domProps: { value: _vm.point.DoubleDependantLocality },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(
-                    _vm.point,
-                    "DoubleDependantLocality",
-                    $event.target.value
+          },
+          [
+            _c(
+              "div",
+              {
+                staticClass: "modal-dialog modal-dialog-centered",
+                attrs: { role: "document" }
+              },
+              [
+                _c("div", { staticClass: "modal-content" }, [
+                  _c(
+                    "form",
+                    {
+                      staticClass: "mb-4",
+                      on: {
+                        submit: function($event) {
+                          $event.preventDefault()
+                          return _vm.addPoint($event)
+                        }
+                      }
+                    },
+                    [
+                      _vm._m(1),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "modal-body" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.ChargeDeviceId,
+                                expression: "point.ChargeDeviceId"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "ChargeDeviceId"
+                            },
+                            domProps: { value: _vm.point.ChargeDeviceId },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "ChargeDeviceId",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.ChargeDeviceRef,
+                                expression: "point.ChargeDeviceRef"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "ChargeDeviceRef"
+                            },
+                            domProps: { value: _vm.point.ChargeDeviceRef },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "ChargeDeviceRef",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.ChargeDeviceName,
+                                expression: "point.ChargeDeviceName"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "ChargeDeviceName"
+                            },
+                            domProps: { value: _vm.point.ChargeDeviceName },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "ChargeDeviceName",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.ChargeDeviceText,
+                                expression: "point.ChargeDeviceText"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "ChargeDeviceText"
+                            },
+                            domProps: { value: _vm.point.ChargeDeviceText },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "ChargeDeviceText",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.Latitude,
+                                expression: "point.Latitude"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "Latitude" },
+                            domProps: { value: _vm.point.Latitude },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "Latitude",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.Longitude,
+                                expression: "point.Longitude"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "Longitude" },
+                            domProps: { value: _vm.point.Longitude },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "Longitude",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.SubBuildingName,
+                                expression: "point.SubBuildingName"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "SubBuildingName"
+                            },
+                            domProps: { value: _vm.point.SubBuildingName },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "SubBuildingName",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.BuildingName,
+                                expression: "point.BuildingName"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "BuildingName"
+                            },
+                            domProps: { value: _vm.point.BuildingName },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "BuildingName",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.BuildingNumber,
+                                expression: "point.BuildingNumber"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "BuildingNumber"
+                            },
+                            domProps: { value: _vm.point.BuildingNumber },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "BuildingNumber",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.Thoroughfare,
+                                expression: "point.Thoroughfare"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "Thoroughfare"
+                            },
+                            domProps: { value: _vm.point.Thoroughfare },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "Thoroughfare",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.Street,
+                                expression: "point.Street"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "Street" },
+                            domProps: { value: _vm.point.Street },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "Street",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.DoubleDependantLocality,
+                                expression: "point.DoubleDependantLocality"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "DoubleDependantLocality"
+                            },
+                            domProps: {
+                              value: _vm.point.DoubleDependantLocality
+                            },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "DoubleDependantLocality",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.DependantLocality,
+                                expression: "point.DependantLocality"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              placeholder: "DependantLocality"
+                            },
+                            domProps: { value: _vm.point.DependantLocality },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "DependantLocality",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.PostTown,
+                                expression: "point.PostTown"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "PostTown" },
+                            domProps: { value: _vm.point.PostTown },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "PostTown",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.County,
+                                expression: "point.County"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "County" },
+                            domProps: { value: _vm.point.County },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "County",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.PostCode,
+                                expression: "point.PostCode"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "PostCode" },
+                            domProps: { value: _vm.point.PostCode },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "PostCode",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.Country,
+                                expression: "point.Country"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "Country" },
+                            domProps: { value: _vm.point.Country },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "Country",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.DateCreated,
+                                expression: "point.DateCreated"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "DateCreated" },
+                            domProps: { value: _vm.point.DateCreated },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "DateCreated",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.DateUpdated,
+                                expression: "point.DateUpdated"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "DateUpdated" },
+                            domProps: { value: _vm.point.DateUpdated },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "DateUpdated",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.Attribution,
+                                expression: "point.Attribution"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "Attribution" },
+                            domProps: { value: _vm.point.Attribution },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "Attribution",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.id,
+                                expression: "point.id"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "ID" },
+                            domProps: { value: _vm.point.id },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(_vm.point, "id", $event.target.value)
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.updated_at,
+                                expression: "point.updated_at"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "updated_at" },
+                            domProps: { value: _vm.point.updated_at },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "updated_at",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.point.created_at,
+                                expression: "point.created_at"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", placeholder: "created_at" },
+                            domProps: { value: _vm.point.created_at },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.point,
+                                  "created_at",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _vm._m(2)
+                    ]
                   )
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.DependantLocality,
-                  expression: "point.DependantLocality"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "DependantLocality" },
-              domProps: { value: _vm.point.DependantLocality },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "DependantLocality", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.PostTown,
-                  expression: "point.PostTown"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "PostTown" },
-              domProps: { value: _vm.point.PostTown },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "PostTown", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.County,
-                  expression: "point.County"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "County" },
-              domProps: { value: _vm.point.County },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "County", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.PostCode,
-                  expression: "point.PostCode"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "PostCode" },
-              domProps: { value: _vm.point.PostCode },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "PostCode", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.Country,
-                  expression: "point.Country"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Country" },
-              domProps: { value: _vm.point.Country },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "Country", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.DateCreated,
-                  expression: "point.DateCreated"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "DateCreated" },
-              domProps: { value: _vm.point.DateCreated },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "DateCreated", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.DateUpdated,
-                  expression: "point.DateUpdated"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "DateUpdated" },
-              domProps: { value: _vm.point.DateUpdated },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "DateUpdated", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.Attribution,
-                  expression: "point.Attribution"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Attribution" },
-              domProps: { value: _vm.point.Attribution },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "Attribution", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.id,
-                  expression: "point.id"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "ID" },
-              domProps: { value: _vm.point.id },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "id", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.updated_at,
-                  expression: "point.updated_at"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "updated_at" },
-              domProps: { value: _vm.point.updated_at },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "updated_at", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.point.created_at,
-                  expression: "point.created_at"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "created_at" },
-              domProps: { value: _vm.point.created_at },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.point, "created_at", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-light btn-block",
-              attrs: { type: "submit" }
-            },
-            [_vm._v("Save Charge Point")]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("nav", { attrs: { "aria-label": "Page navigation example" } }, [
-        _c("ul", { staticClass: "pagination" }, [
-          _c(
-            "li",
-            {
-              staticClass: "page-item",
-              class: [{ disabled: !_vm.pagination.prev_page_url }]
-            },
-            [
+                ])
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("nav", { attrs: { "aria-label": "Page navigation example" } }, [
+          _c("ul", { staticClass: "pagination" }, [
+            _c(
+              "li",
+              {
+                staticClass: "page-item",
+                class: [{ disabled: !_vm.pagination.prev_page_url }]
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "page-link",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.fetchPoints(_vm.pagination.prev_page_url)
+                      }
+                    }
+                  },
+                  [_vm._v("Previous")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item disabled" }, [
               _c(
                 "a",
-                {
-                  staticClass: "page-link",
-                  attrs: { href: "#" },
-                  on: {
-                    click: function($event) {
-                      return _vm.fetchPoints(_vm.pagination.prev_page_url)
-                    }
-                  }
-                },
-                [_vm._v("Previous")]
+                { staticClass: "page-link text-dark", attrs: { href: "#" } },
+                [
+                  _vm._v(
+                    "Page " +
+                      _vm._s(_vm.pagination.current_page) +
+                      " of " +
+                      _vm._s(_vm.pagination.last_page)
+                  )
+                ]
               )
-            ]
-          ),
-          _vm._v(" "),
-          _c("li", { staticClass: "page-item disabled" }, [
+            ]),
+            _vm._v(" "),
             _c(
-              "a",
-              { staticClass: "page-link text-dark", attrs: { href: "#" } },
+              "li",
+              {
+                staticClass: "page-item",
+                class: [{ disabled: !_vm.pagination.next_page_url }]
+              },
               [
-                _vm._v(
-                  "Page " +
-                    _vm._s(_vm.pagination.current_page) +
-                    " of " +
-                    _vm._s(_vm.pagination.last_page)
+                _c(
+                  "a",
+                  {
+                    staticClass: "page-link",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.fetchPoints(_vm.pagination.next_page_url)
+                      }
+                    }
+                  },
+                  [_vm._v("Next")]
                 )
               ]
             )
-          ]),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "page-item",
-              class: [{ disabled: !_vm.pagination.next_page_url }]
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "page-link",
-                  attrs: { href: "#" },
-                  on: {
-                    click: function($event) {
-                      return _vm.fetchPoints(_vm.pagination.next_page_url)
-                    }
-                  }
-                },
-                [_vm._v("Next")]
-              )
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "flex flex-wrap" },
-        _vm._l(_vm.points, function(point) {
-          return _c("div", { key: point.id, staticClass: "col-md-4" }, [
-            _c("div", { staticClass: "card mb-4" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", [_vm._v(_vm._s(point.ChargeDeviceName))])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [_vm._v(_vm._s(point.PostTown))]),
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex flex-wrap" },
+          _vm._l(_vm.points, function(point) {
+            return _c("div", { key: point.id, staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "card mb-4" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("h3", [_vm._v(_vm._s(point.ChargeDeviceName))])
+                ]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.ChargeDeviceId))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.ChargeDeviceRef))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.ChargeDeviceName))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.ChargeDeviceText))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.Latitude))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.Longitude))]),
-                _vm._v(" "),
-                _c("h2", [_vm._v("Address:")]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.SubBuildingName)), _c("br")]),
-                point.BuildingName
-                  ? _c("div", [_vm._v(_vm._s(point.BuildingName))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.BuildingNumber
-                  ? _c("div", [_vm._v(_vm._s(point.BuildingNumber))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.Thoroughfare
-                  ? _c("div", [_vm._v(_vm._s(point.Thoroughfare))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.Street
-                  ? _c("div", [_vm._v(_vm._s(point.Street))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.DoubleDependantLocality
-                  ? _c("div", [_vm._v(_vm._s(point.DoubleDependantLocality))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.DependantLocality
-                  ? _c("div", [_vm._v(_vm._s(point.DependantLocality))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.PostTown
-                  ? _c("div", [_vm._v(_vm._s(point.PostTown))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.County
-                  ? _c("div", [_vm._v(_vm._s(point.County))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.PostCode
-                  ? _c("div", [_vm._v(_vm._s(point.PostCode))])
-                  : _vm._e(),
-                _vm._v(" "),
-                point.Country
-                  ? _c("div", [_vm._v(_vm._s(point.Country))])
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.DateCreated))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.DateUpdated))]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(point.Attribution))]),
-                _vm._v(" "),
-                _c("p", [_vm._v("ID: " + _vm._s(point.id))])
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [_vm._v(_vm._s(point.PostTown))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.ChargeDeviceId))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.ChargeDeviceRef))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.ChargeDeviceName))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.ChargeDeviceText))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.Latitude))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.Longitude))]),
+                  _vm._v(" "),
+                  _c("h2", [_vm._v("Address:")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.SubBuildingName)), _c("br")]),
+                  point.BuildingName
+                    ? _c("div", [_vm._v(_vm._s(point.BuildingName))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.BuildingNumber
+                    ? _c("div", [_vm._v(_vm._s(point.BuildingNumber))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.Thoroughfare
+                    ? _c("div", [_vm._v(_vm._s(point.Thoroughfare))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.Street
+                    ? _c("div", [_vm._v(_vm._s(point.Street))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.DoubleDependantLocality
+                    ? _c("div", [_vm._v(_vm._s(point.DoubleDependantLocality))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.DependantLocality
+                    ? _c("div", [_vm._v(_vm._s(point.DependantLocality))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.PostTown
+                    ? _c("div", [_vm._v(_vm._s(point.PostTown))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.County
+                    ? _c("div", [_vm._v(_vm._s(point.County))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.PostCode
+                    ? _c("div", [_vm._v(_vm._s(point.PostCode))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  point.Country
+                    ? _c("div", [_vm._v(_vm._s(point.Country))])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.DateCreated))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.DateUpdated))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(point.Attribution))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("ID: " + _vm._s(point.id))])
+                ])
               ])
             ])
-          ])
-        }),
-        0
-      ),
-      _vm._v(" "),
-      _c("nav", { attrs: { "aria-label": "Page navigation example" } }, [
-        _c("ul", { staticClass: "pagination" }, [
-          _c(
-            "li",
-            {
-              staticClass: "page-item",
-              class: [{ disabled: !_vm.pagination.prev_page_url }]
-            },
-            [
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c("nav", { attrs: { "aria-label": "Page navigation example" } }, [
+          _c("ul", { staticClass: "pagination" }, [
+            _c(
+              "li",
+              {
+                staticClass: "page-item",
+                class: [{ disabled: !_vm.pagination.prev_page_url }]
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "page-link",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.fetchPoints(_vm.pagination.prev_page_url)
+                      }
+                    }
+                  },
+                  [_vm._v("Previous")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item disabled" }, [
               _c(
                 "a",
-                {
-                  staticClass: "page-link",
-                  attrs: { href: "#" },
-                  on: {
-                    click: function($event) {
-                      return _vm.fetchPoints(_vm.pagination.prev_page_url)
-                    }
-                  }
-                },
-                [_vm._v("Previous")]
+                { staticClass: "page-link text-dark", attrs: { href: "#" } },
+                [
+                  _vm._v(
+                    "Page " +
+                      _vm._s(_vm.pagination.current_page) +
+                      " of " +
+                      _vm._s(_vm.pagination.last_page)
+                  )
+                ]
               )
-            ]
-          ),
-          _vm._v(" "),
-          _c("li", { staticClass: "page-item disabled" }, [
+            ]),
+            _vm._v(" "),
             _c(
-              "a",
-              { staticClass: "page-link text-dark", attrs: { href: "#" } },
+              "li",
+              {
+                staticClass: "page-item",
+                class: [{ disabled: !_vm.pagination.next_page_url }]
+              },
               [
-                _vm._v(
-                  "Page " +
-                    _vm._s(_vm.pagination.current_page) +
-                    " of " +
-                    _vm._s(_vm.pagination.last_page)
+                _c(
+                  "a",
+                  {
+                    staticClass: "page-link",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.fetchPoints(_vm.pagination.next_page_url)
+                      }
+                    }
+                  },
+                  [_vm._v("Next")]
                 )
               ]
             )
-          ]),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              staticClass: "page-item",
-              class: [{ disabled: !_vm.pagination.next_page_url }]
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "page-link",
-                  attrs: { href: "#" },
-                  on: {
-                    click: function($event) {
-                      return _vm.fetchPoints(_vm.pagination.next_page_url)
-                    }
-                  }
-                },
-                [_vm._v("Next")]
-              )
-            ]
-          )
+          ])
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("h2", [_vm._v("Charge Points")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4 text-right" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#addStopChargeModal"
+            }
+          },
+          [_vm._v("\n        Add Stop Charge\n      ")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        {
+          staticClass: "modal-title",
+          attrs: { id: "addStopChargeModalTitle" }
+        },
+        [_vm._v("Add a new Stop Charge Point")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-secondary",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("Close")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("Save Charge Point")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
