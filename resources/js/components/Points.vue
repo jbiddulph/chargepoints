@@ -189,7 +189,7 @@ export default {
         fetch(`/api/points/${id}`, {
           method: 'delete'
         })
-        .then(res => res.text())
+        .then(res => res.json())
         .then( data => {
           alert('Point Removed')
           this.fetchPoints()
@@ -208,7 +208,7 @@ export default {
             'Accept': 'application/json'
           }
         })
-        .then(res => res.text())
+        .then(res => res.json())
         .then(data => {
           this.point.ChargeDeviceId = '',
           this.point.ChargeDeviceRef = '',
