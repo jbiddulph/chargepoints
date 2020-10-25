@@ -2068,6 +2068,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2097,7 +2100,8 @@ __webpack_require__.r(__webpack_exports__);
       },
       point_id: '',
       pagination: {},
-      edit: false
+      edit: false,
+      isHidden: true
     };
   },
   created: function created() {
@@ -38663,59 +38667,77 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", [_vm._v(_vm._s(point.Longitude))]),
                   _vm._v(" "),
-                  _c("h2", [_vm._v("Address:")]),
+                  _c(
+                    "button",
+                    {
+                      on: {
+                        click: function($event) {
+                          _vm.isHidden = !_vm.isHidden
+                        }
+                      }
+                    },
+                    [_vm._v("Toggle More")]
+                  ),
                   _vm._v(" "),
-                  point.SubBuildingName
-                    ? _c("div", [_vm._v(_vm._s(point.SubBuildingName))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.BuildingName
-                    ? _c("div", [_vm._v(_vm._s(point.BuildingName))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.BuildingNumber
-                    ? _c("div", [_vm._v(_vm._s(point.BuildingNumber))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.Thoroughfare
-                    ? _c("div", [_vm._v(_vm._s(point.Thoroughfare))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.Street
-                    ? _c("div", [_vm._v(_vm._s(point.Street))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.DoubleDependantLocality
-                    ? _c("div", [_vm._v(_vm._s(point.DoubleDependantLocality))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.DependantLocality
-                    ? _c("div", [_vm._v(_vm._s(point.DependantLocality))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.PostTown
-                    ? _c("div", [_vm._v(_vm._s(point.PostTown))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.County
-                    ? _c("div", [_vm._v(_vm._s(point.County))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.PostCode
-                    ? _c("div", [_vm._v(_vm._s(point.PostCode))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  point.Country
-                    ? _c("div", [_vm._v(_vm._s(point.Country))])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(point.DateCreated))]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(point.DateUpdated))]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(point.Attribution))]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v("ID: " + _vm._s(point.id))])
+                  !_vm.isHidden
+                    ? _c("div", { staticClass: "address" }, [
+                        _c("h2", [_vm._v("Address:")]),
+                        _vm._v(" "),
+                        point.SubBuildingName
+                          ? _c("div", [_vm._v(_vm._s(point.SubBuildingName))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.BuildingName
+                          ? _c("div", [_vm._v(_vm._s(point.BuildingName))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.BuildingNumber
+                          ? _c("div", [_vm._v(_vm._s(point.BuildingNumber))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.Thoroughfare
+                          ? _c("div", [_vm._v(_vm._s(point.Thoroughfare))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.Street
+                          ? _c("div", [_vm._v(_vm._s(point.Street))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.DoubleDependantLocality
+                          ? _c("div", [
+                              _vm._v(_vm._s(point.DoubleDependantLocality))
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.DependantLocality
+                          ? _c("div", [_vm._v(_vm._s(point.DependantLocality))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.PostTown
+                          ? _c("div", [_vm._v(_vm._s(point.PostTown))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.County
+                          ? _c("div", [_vm._v(_vm._s(point.County))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.PostCode
+                          ? _c("div", [_vm._v(_vm._s(point.PostCode))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        point.Country
+                          ? _c("div", [_vm._v(_vm._s(point.Country))])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("p", [_vm._v(_vm._s(point.DateCreated))]),
+                        _vm._v(" "),
+                        _c("p", [_vm._v(_vm._s(point.DateUpdated))]),
+                        _vm._v(" "),
+                        _c("p", [_vm._v(_vm._s(point.Attribution))]),
+                        _vm._v(" "),
+                        _c("p", [_vm._v("ID: " + _vm._s(point.id))])
+                      ])
+                    : _vm._e()
                 ])
               ])
             ])

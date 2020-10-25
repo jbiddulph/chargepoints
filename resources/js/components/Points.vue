@@ -124,22 +124,25 @@
                 <p>{{ point.ChargeDeviceText }}</p>
                 <p>{{ point.Latitude }}</p>
                 <p>{{ point.Longitude }}</p>
-                <h2>Address:</h2>
-                <div v-if="point.SubBuildingName">{{ point.SubBuildingName }}</div>
-                <div v-if="point.BuildingName">{{ point.BuildingName }}</div>
-                <div v-if="point.BuildingNumber">{{ point.BuildingNumber }}</div>
-                <div v-if="point.Thoroughfare">{{ point.Thoroughfare }}</div>
-                <div v-if="point.Street">{{ point.Street }}</div>
-                <div v-if="point.DoubleDependantLocality">{{ point.DoubleDependantLocality }}</div>
-                <div v-if="point.DependantLocality">{{ point.DependantLocality }}</div>
-                <div v-if="point.PostTown">{{ point.PostTown }}</div>
-                <div v-if="point.County">{{ point.County }}</div>
-                <div v-if="point.PostCode">{{ point.PostCode }}</div>
-                <div v-if="point.Country">{{ point.Country }}</div>
-                <p>{{ point.DateCreated }}</p>
-                <p>{{ point.DateUpdated }}</p>
-                <p>{{ point.Attribution }}</p>
-                <p>ID: {{ point.id }}</p>
+                <button v-on:click="isHidden = !isHidden">Toggle More</button>
+                <div v-if="!isHidden" class="address">
+                  <h2>Address:</h2>
+                  <div v-if="point.SubBuildingName">{{ point.SubBuildingName }}</div>
+                  <div v-if="point.BuildingName">{{ point.BuildingName }}</div>
+                  <div v-if="point.BuildingNumber">{{ point.BuildingNumber }}</div>
+                  <div v-if="point.Thoroughfare">{{ point.Thoroughfare }}</div>
+                  <div v-if="point.Street">{{ point.Street }}</div>
+                  <div v-if="point.DoubleDependantLocality">{{ point.DoubleDependantLocality }}</div>
+                  <div v-if="point.DependantLocality">{{ point.DependantLocality }}</div>
+                  <div v-if="point.PostTown">{{ point.PostTown }}</div>
+                  <div v-if="point.County">{{ point.County }}</div>
+                  <div v-if="point.PostCode">{{ point.PostCode }}</div>
+                  <div v-if="point.Country">{{ point.Country }}</div>
+                  <p>{{ point.DateCreated }}</p>
+                  <p>{{ point.DateUpdated }}</p>
+                  <p>{{ point.Attribution }}</p>
+                  <p>ID: {{ point.id }}</p>
+                </div>
                 <!-- <button @click="editPoint(point)" class="btn btn-warning mb-2" data-toggle="modal" data-target="#addStopChargeModal">Edit</button>
                 <button @click="deletePoint(point.id)" class="btn btn-danger mb-2">Delete</button> -->
               </div>
@@ -189,6 +192,7 @@ export default {
       point_id: '',
       pagination: {},
       edit: false,
+      isHidden: true,
     }
   },
   created() {
