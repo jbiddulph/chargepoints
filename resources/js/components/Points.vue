@@ -3,6 +3,13 @@
     <div class="row">
       <div class="col-md-8">
         <h2>Charge Points</h2>
+        <p v-if="user.id === 1">User: {{ user.name }}</p>
+        <select v-if="towns">
+          <option>Please select a town</option>
+          <option v-for="town in towns" :key="town.id" :value="town.PostTown">
+            {{ town.PostTown }}
+          </option>
+        </select>
       </div>
       <div class="col-md-4 text-right mt-2">
         <!-- Button trigger modal -->
@@ -143,8 +150,8 @@
                   <p>{{ point.Attribution }}</p>
                   <p>ID: {{ point.id }}</p>
                 </div>
-                <!-- <button @click="editPoint(point)" class="btn btn-warning mb-2" data-toggle="modal" data-target="#addStopChargeModal">Edit</button>
-                <button @click="deletePoint(point.id)" class="btn btn-danger mb-2">Delete</button> -->
+                <button v-if="user.id === 1" @click="editPoint(point)" class="btn btn-warning mb-2" data-toggle="modal" data-target="#addStopChargeModal">Edit</button>
+                <button v-if="user.id === 1" @click="deletePoint(point.id)" class="btn btn-danger mb-2">Delete</button>
               </div>
             </div>
           </div>
@@ -163,6 +170,9 @@
 
 <script>
 export default {
+  props: [
+    'user',
+    'towns'],
   data() {
     return {
       points: [],

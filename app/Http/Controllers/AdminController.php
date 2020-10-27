@@ -5,38 +5,39 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Point;
 use Auth;
-class HomeController extends Controller
+class AdminController extends Controller
 {
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    
+
+    public function main()
+    {
+        return view('home');
+    }
+
+    public function points()
     {
         $towns = Point::select('PostTown')->distinct()->orderBy('PostTown', 'asc')->get();
         $user = Auth::user();
-        if($user != '1') {
-            $user = '0';
-        }
-
-        return view('main', compact(
+        return view('welcome', compact(
             'user',
             'towns'
         ));
-        
     }
-    
 
 
 }

@@ -12,7 +12,7 @@ class PointsController extends Controller
      * @return PointsResourceCollection
      */
     public function index(): PointsResourceCollection {
-        return new PointsResourceCollection(Point::orderBy('id', 'desc')->paginate(50));
+        return new PointsResourceCollection(Point::inRandomOrder()->paginate(50));
     }
 
     /**

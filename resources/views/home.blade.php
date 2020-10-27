@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <a href="{{route('points')}}">Points</a>
                 </div>
             </div>
         </div>
